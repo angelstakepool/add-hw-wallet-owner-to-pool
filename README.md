@@ -117,4 +117,4 @@ cardano-cli shelley transaction submit
 
 ... and Done !!! :+1:
 <BR><BR>
-***NOTE: Transfer of funds from CLI wallet to HW wallet can ONLY be done after 2 snapshots (some mention 1 snapshot but I can always wait for 2 to be sure), otherwise pool will not meet pledge in next epoch and no rewards would be paid***
+***CRITICAL NOTE: Transfer of funds from CLI wallet to HW wallet can ONLY be done after 2 snapshots (some mention 1 snapshot but I can always wait for 2 to be sure), otherwise pool will not meet pledge in next epoch and no rewards would be paid***
