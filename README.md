@@ -16,7 +16,7 @@ Delegate hw-Wallet to pool in either Daedalus or Yoroi
 ## STEP 2 Export hw-Wallet public keys (stake) in desktop
 
 ```
-cardano-hw-cli shelley address key-gen
+cardano-hw-cli address key-gen
   --path 1852H/1815H/0H/2/0
   --verification-key-file hw-stake.vkey
   --hw-signing-file hw-stake.hwsfile
@@ -92,7 +92,7 @@ Create a witness using my hw-stake.vkey in desktop (where ledger is connected)
 
 *hw-stake*
 ```
-cardano-hw-cli shelley transaction witness
+cardano-hw-cli transaction witness
   --tx-body-file tx-pool.raw
   --hw-signing-file hw-stake.hwsfile
   --mainnet
