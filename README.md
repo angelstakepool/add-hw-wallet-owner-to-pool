@@ -45,7 +45,13 @@ cardano-cli stake-pool registration-certificate \
 
 Create a transaction tx-pool.raw that includes this pool certificate:
 ```
---certificate-file pool.cert
+cardano-cli transaction build-raw \
+     --tx-in <utxo> \
+     --tx-out $(cat payment.addr)+returnChange \
+     --invalid-hereafter <ttl> \
+     --fee <fee> \
+     --certificate-file poolcert.cert \
+     --out-file tx-pool.raw
 ```
 
 This transaction must be signed using witnesses (multi-sig)
