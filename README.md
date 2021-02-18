@@ -50,7 +50,7 @@ cardano-cli transaction build-raw \
      --tx-out $(cat payment.addr)+returnChange \
      --invalid-hereafter <ttl> \
      --fee <fee> \
-     --certificate-file poolcert.cert \
+     --certificate-file pool.cert \
      --out-file tx-pool.raw
 ```
 
